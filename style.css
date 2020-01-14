@@ -1,0 +1,42 @@
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-width: 800px;
+    margin: 0.5em auto;
+    border: 1px solid blue;
+    font-size: 16px;
+}
+
+body{
+    padding: 0.5em;
+}
+
+h1 {
+    color: blue;
+    font-variant: small-caps;
+    text-align: center;
+    margin: 1.25em;
+}
+
+.maroon {
+    color: maroon;
+}
+
+#imagine-texti{
+    color: blue;
+    margin-left: 4em;
+}
+
+#imagine-texti strong, .red{
+    color: red;
+}
+
+#namskrofur-texti ol{
+    margin-left: 1em;
+}
+#namskrofur-texti ul{
+    color:seagreen;
+}
+
+.centered{
+    text-align: center;
+}
