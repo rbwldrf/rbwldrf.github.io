@@ -1,8 +1,85 @@
-.box-green{
+.verk-2-1 .box-green{
     width: 100%;
-    border:1px solid green;
-    
+    border:.075em solid green;
 }
-html{
-    background-color: aqua;
+.verk-2-1 .box-red{
+    border: .25em solid red;
+    margin: 3em 0;
+    padding: 3.5em;
+}
+
+.verk-2-1 .box-blue{
+    color: blue;
+    padding: 0 1.5em;
+    border: .25em dashed blue;
+    margin: 2.5em 0;
+}
+
+h1{
+    padding: 0;
+}
+.red{
+    color:red;
+}
+h2,hr{
+    margin: 0;
+}
+.verk-2-2 .block li{
+    display: block;
+    padding: 1em;
+    margin: 1em;
+    border: 3px dashed green;
+}
+.verk-2-2 .inline li{
+    display: inline;
+    padding: 1em;
+    margin: 1em;
+    border: 3px dashed blue;
+    color: red;
+}
+.verk-2-2 .inline-block li{
+    display: inline-block;
+    padding: 1em;
+    margin: 1em;
+    border: 3px dashed red;
+}
+.verk-2-3 .title{
+    background-color: lightgrey;
+    text-align: right;
+}
+.verk-2-3 h1{
+    margin: 0;
+}
+.verk-2-3 div{
+    float: left;
+    width: 49.5%;
+    border: 1px solid #000;
+}
+.paragraph{
+    display: block;
+    padding: 1em;
+}
+.paragraph::first-letter{
+    float: left;
+    font-size: 5em;
+    padding: .2em;
+}
+
+.verk-2-3 .image p{
+    display: inline;
+}
+
+.verk-2-3 .image img{
+    float: right;
+    display: inline;
+}
+.verk-2-3 .warning{
+    width: 99%;
+}
+.verk-2-3 .warning h3{
+    background-color: yellow;
+    text-align: center;
+}
+.verk-2-3 h2{
+    margin: 1em;
 }
