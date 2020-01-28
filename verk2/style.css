@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 .verk-2-1 .box-green{
     width: 100%;
     border:.075em solid green;
@@ -21,8 +24,12 @@ h1{
 .red{
     color:red;
 }
-h2,hr{
+h2{
     margin: 0;
+}
+hr{
+    margin-top: 0;
+    margin-bottom: 1em;
 }
 .verk-2-2 .block li{
     display: block;
@@ -52,7 +59,7 @@ h2,hr{
 }
 .verk-2-3 div{
     float: left;
-    width: 45%;
+    width: 50%;
     padding: 2%;
     border: 1px solid #000;
 }
@@ -75,7 +82,7 @@ h2,hr{
     display: inline;
 }
 .verk-2-3 .warning{
-    width: 96%;
+    width: 100%;
     padding: 1% 2%;
 }
 .verk-2-3 .warning h3{
@@ -86,6 +93,6 @@ h2,hr{
     margin-bottom: 1em;
 }
 .verk-2-3 .image{
-    width: 46%;
+    width: 50%;
     padding: 2%;
 }
