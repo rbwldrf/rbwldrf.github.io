@@ -52,12 +52,12 @@ h2,hr{
 }
 .verk-2-3 div{
     float: left;
-    width: 49.5%;
+    width: 49%;
     border: 1px solid #000;
 }
 .paragraph{
     display: block;
-    padding: 1em;
+    padding: 1%;
 }
 .paragraph::first-letter{
     float: left;
@@ -74,7 +74,8 @@ h2,hr{
     display: inline;
 }
 .verk-2-3 .warning{
-    width: 99%;
+    width: 96%;
+    padding: 1% 2%;
 }
 .verk-2-3 .warning h3{
     background-color: yellow;
@@ -82,4 +83,8 @@ h2,hr{
 }
 .verk-2-3 h2{
     margin: 1em;
+}
+.verk-2-3 .image{
+    width: 47.5%;
+    padding: 1%;
 }
