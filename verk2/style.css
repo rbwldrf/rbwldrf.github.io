@@ -52,7 +52,8 @@ h2,hr{
 }
 .verk-2-3 div{
     float: left;
-    width: 49%;
+    width: 45%;
+    padding: 2%;
     border: 1px solid #000;
 }
 .paragraph{
@@ -82,9 +83,9 @@ h2,hr{
     text-align: center;
 }
 .verk-2-3 h2{
-    margin: 1em;
+    margin-bottom: 1em;
 }
 .verk-2-3 .image{
-    width: 47.5%;
-    padding: 1%;
+    width: 46%;
+    padding: 2%;
 }
