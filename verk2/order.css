@@ -13,7 +13,7 @@ footer p {
 
 .row{
 	display: flex;
-	flex-flow: row;
+	flex-flow: row-reverse;
 	align-items: stretch;
 
 }
@@ -23,7 +23,7 @@ footer p {
 
 .col{
 	display: flex;
-	flex-flow: column;
+	flex-flow: column-reverse;
 }
 div p{
 	text-align:center;
@@ -33,25 +33,21 @@ div p{
 
 .gulur {
 	background-color: yellow; 
-	order: 1;
 }
 .raudur {
 	background-color: red; 
-	order: 2;
 }
 .graenn {
 	background-color: lime;
-	order: 3;
 }
 .blar {
 	background-color: cyan;
-	order: 4; 
 }
 .box {
 	font-size: 1.2em;
 	text-align: center;
 	height: 5em;
-	width:999em; /*fuck it*/
+	width:999em; 
 	position: relative;
 }
 

@@ -1,0 +1,121 @@
+.main{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width:80%;
+    margin: 0 auto;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+
+}
+
+.main > * {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+.main > * > b.head{
+    margin: 1em 0;
+    display: block;
+}
+
+.page3 main{
+    grid-row-start: 2;
+}
+
+.page3 aside{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.page2 article{
+    grid-area: 3;
+}
+
+.page2 nav{
+    grid-area: 1;
+}
+
+.main > * > p{
+    text-align: justify;
+}
+
+.main header a{
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 1em;
+}
+
+.main header{
+    grid-column: auto / span 5;
+    background-color: khaki;
+    height: 10em;
+}
+
+.page3 .main header{
+    grid-column: auto / span 4;
+}
+
+.page3 .main nav{
+    grid-column: auto / span 1;
+    grid-template-columns: auto;
+    width: 15em;
+    height: auto;
+    padding: 1em;
+}
+
+.page3 .main nav a{
+    text-align: left;
+    padding: 0;
+    padding-left: 2em;
+}
+
+.main nav, .main footer{
+    grid-column: auto / span 5;
+    background-color: lightcoral;
+    display: grid;
+    width: 100%;
+    height: 3em;
+}
+.main nav{
+    grid-template-columns: auto auto auto auto;
+}
+.main footer{
+    grid-template-columns: auto auto auto;
+}
+p{
+    line-height: 1.5em;
+}
+.main nav a, .main footer a{
+    grid-column: auto;
+    text-align: center;
+    height: 100%;
+    padding-top: 1em;
+    vertical-align: middle;
+    position: relative;
+}
+
+.main article{
+    grid-column: auto / span 3;
+}
+
+.main footer{
+    grid-column: auto / span 5;
+}
+
+.main header .title{
+    text-align: center;
+    font-size: 4em;
+    margin: 0.5em 0 0 0;
+    font-style: italic;
+}
+.inner-box{
+    border:1px solid black;
+    margin:0 5em;
+    padding: 1em;
+}
+.main main,.main aside,.main article{
+    border: 0 0 5px 0 solid black;
+    padding: 1em;
+}
