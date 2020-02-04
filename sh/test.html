@@ -7,28 +7,24 @@
     <title>Document</title>
 </head>
 
+<style>
+    #asdf{
+        transition: left .5s ease-out;
+        left: 0;
+    }
+</style>
+
 <body>
-    <a style="position: absolute;" id="asdf" onclick="test()">Click Me!</a>
+    <a style="position: absolute;display:block;" id="asdf">Click Me!</a>
 </body>
 <script>
-    var thing = document.getElementById("asdf");
-    scrollLerped = 0;
+    var anim = document.getElementById("asdf");
     scrollActual = 0;
-    var trf = 'translate(0%)';
 
-    function lerp(){
-        scrollLerped += (scrollActual-scrollLerped)*0.005;
-        console.log(scrollLerped);
-        trf = 'translateX('+(scrollLerped*100)+'%)';
-    }
-    function test(){
-        scrollActual+=1;
-        while(scrollLerped<(scrollActual-0.02)){
-            lerp();
-            thing.style.mozTransform=trf;
-            thing.style.transform=trf;
-            thing.style.webkitTransform=trf;
-        }
+    asdf.onclick = function(){
+        let w = parseFloat(window.getComputedStyle(anim).getPropertyValue("width"));
+        scrollActual+=1; console.log(w*scrollActual);
+        this.style.left = (w*scrollActual)+"px";
     }
 </script>
 </html>
