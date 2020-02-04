@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <a style="position: absolute;" id="asdf" onclick="test()">Click Me!</a>
+</body>
+<script>
+    var thing = document.getElementById("asdf");
+    scrollLerped = 0;
+    scrollActual = 0;
+    var trf = 'translate(0%)';
+
+    function lerp(){
+        scrollLerped += (scrollActual-scrollLerped)*0.005;
+        console.log(scrollLerped);
+        trf = 'translateX('+(scrollLerped*100)+'%)';
+    }
+    function test(){
+        scrollActual+=1;
+        while(scrollLerped<(scrollActual-0.02)){
+            lerp();
+            thing.style.mozTransform=trf;
+            thing.style.transform=trf;
+            thing.style.webkitTransform=trf;
+        }
+    }
+</script>
+</html>
