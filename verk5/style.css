@@ -146,15 +146,18 @@ a, a:visited{
     border-right: 1px solid white;
     display: inline-block;
     text-align: center;
-    padding:.875vw;
-    background-color: purple;
+    padding:1em;
+    height: 3em;
+    overflow: hidden;
+    background-image: linear-gradient(to left, rgb(163, 158, 192), rgb(149, 126, 212) 250%);
     color: white;
+    text-shadow: .1em .1em 2px #000;
 }
 
 
 .main-container > .linkbar > .innermenu > a:hover{
-    background: rgb(127,255,127);
-    color: grey;
+    background-image: linear-gradient(to left, rgb(202, 40, 75) -250%, rgb(224, 135, 176) 50%, rgb(202, 40, 75) 250%);
+    background-attachment: scroll;
 }
 .main-container > .linkbar > .innermenu > a:last-of-type{
     border-right: none;
