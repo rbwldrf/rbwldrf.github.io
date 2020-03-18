@@ -58,14 +58,14 @@ p{
 .container > .content{
     max-width: 960px;
     padding: 1em;
-    background-image: linear-gradient(185deg, rgba(241, 241, 220, 0.33) 62.5%, rgba(165, 94, 109, 0.1) 125%);
+    background-image: linear-gradient(180deg, rgba(241, 241, 220, 0.66) 0%, rgba(189, 187, 172, 0.13) 125%);
     background-attachment: fixed;
 }
 
 a, a:visited{
     color: white;
     text-decoration: none;
-    
+    text-shadow: .1em .1em #000;
 }
 
 /**/
@@ -159,7 +159,7 @@ a, a:visited{
 
 
 .main-container > .linkbar > .innermenu > a:hover{
-    background-image: linear-gradient(to left, rgb(202, 40, 75) -250%, rgb(224, 135, 176) 50%, rgb(202, 40, 75) 250%);
+    background-image: linear-gradient(220deg, rgb(224, 135, 176) 50%, rgb(158, 57, 79) 125%);
     background-attachment: scroll;
 }
 .main-container > .linkbar > .innermenu > a:last-of-type{
@@ -177,6 +177,7 @@ a, a:visited{
     width: 5vh;
     border-radius: 100%;
     color: black !important;
+    text-shadow: none;
 }
 
 .links{
