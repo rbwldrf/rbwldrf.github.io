@@ -23,16 +23,10 @@
 
 /* ====== Base CSS ====== */
 
-.thing{
-  position: relative;
-  width: 150%;
-  background-color: lightcoral;
-  right: 25%;
-}
 body {
 margin: 0 auto;
 line-height: 1.5em;
-max-width: 80em;
+max-width: 60em;
 }
 body{
   display: grid;  
@@ -150,6 +144,8 @@ Viðmið - breakpoints 30em = 480px +
     .myndabox{      
       grid-template-columns: auto auto;
       display: grid;
+      float: none;
+      clear: both;
     }
 
   }
@@ -210,9 +206,7 @@ Viðmið - breakpoints 48em = 760px +
           "lt md md md rt"
       ;
     }
-    .myndabox{      
-      grid-template-columns: auto auto auto auto;
-    }
+    
   }
   
 
