@@ -62,7 +62,7 @@ p{
     background-attachment: fixed;
 }
 
-a, a:visited{
+a, a:visited, .copy{
     color: white;
     text-decoration: none;
     text-shadow: .1em .1em #000;
@@ -185,10 +185,16 @@ a, a:visited{
     align-items: stretch;
     width: 100%;
     margin-top: 3em;
+    color: white;
+    text-shadow: .1em .1em #000;
 }
 
 .links > * {
     width:9999em;
+}
+
+li{
+    list-style-type: none;
 }
 
 @media (max-width: 768px){
