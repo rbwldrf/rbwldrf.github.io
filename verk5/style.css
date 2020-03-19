@@ -68,10 +68,14 @@ a, a:visited, .copy{
     text-shadow: .1em .1em #000;
 }
 
+.copy{
+    position: fixed;
+    bottom: 0;
+    margin:0;
+}
 /**/
 
 .top-container{
-    max-width: 880px;
     margin:0 auto 3.75em auto;
     display: flex;
     height: 12em;
@@ -81,16 +85,24 @@ a, a:visited, .copy{
     font-family: 'Quicksand', sans-serif;
     color: white;
     text-shadow: .1em .1em #000;
+    border-bottom: .125em solid white;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .verkefni{
     text-align: right;
-    height: 77.5%;
     margin:0;
+    position: absolute;
+    top: 0;
+    right:0;
+    padding-right: 1em;
 }
 
 .topnav{
     text-align: right;
+    position: absolute;
+    bottom:0;
+    right: 0;
 }
 
 .topnav > * {
@@ -111,6 +123,7 @@ a, a:visited, .copy{
     vertical-align: bottom;
     text-transform: uppercase;
     font-size: 3em;
+    padding-left: .5em;
 }
 
 
@@ -183,11 +196,12 @@ a, a:visited, .copy{
 .links{
     display: flex;
     align-items: stretch;
-    width: 100%;
-    margin-top: 3em;
+    margin: 3em auto 0 auto;
     color: white;
     text-shadow: .1em .1em #000;
     padding: 1em 3em;
+    border-top:.125em solid white;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .links > * {
@@ -202,6 +216,18 @@ li{
     .main-container > .linkbar > .innermenu{
         grid-template-columns: auto auto;
     }
+    .top-container > div {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+    }
+    .top-container > div {
+        width: 100%;
+    }
+    .top-container > div > h1 {
+        font-size: 06vw;
+    }
+
 }
 
 @media (max-height:28em){
