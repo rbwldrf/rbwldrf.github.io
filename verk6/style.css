@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Quicksand|Gotu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Jomolhari|Quicksand|Gotu&display=swap');
 
 *{
     box-sizing: border-box;
@@ -53,13 +53,15 @@
 }
 
 .desc-container{
-    background-image: linear-gradient(to bottom,rgb(218, 255, 255),	rgb(172, 216, 216));
+    background-image: linear-gradient(to bottom,rgb(191, 255, 255),	rgb(172, 216, 216));
     background-attachment: fixed;
     display:flex;
     align-items: center;
     flex-direction: column;
     padding:3em;
     overflow: auto;
+    font-family: Jomolhari;
+    line-height: 160%;
 }
 
 .logo-title{
@@ -143,6 +145,7 @@ body{
 
 .desc-quote {
     font-size: 3em; 
+    line-height: 120%;
     text-align: center;
     margin: 0;
     font-family: Quicksand;
@@ -151,6 +154,10 @@ body{
     text-align: right;
     margin: 0;
 
+}
+
+.boxtext{
+    padding-bottom: 1em;
 }
 
 .box > figure{
@@ -176,7 +183,7 @@ body{
 
 .desc-container > div > .info {
     border: 1px solid black; margin: 1em;
-    padding: 1em;
+    padding: 1em; background-color: rgba(226, 226, 226, 0.61);
 }
 
 .desc-quote-container{
@@ -256,6 +263,7 @@ body{
         clear: both;
         }
     .boxtext{
+        padding-bottom: 0;
         padding-right: 2em;
     }
 }
