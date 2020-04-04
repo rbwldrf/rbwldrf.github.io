@@ -200,7 +200,7 @@ body{
     .logo-title-container{
         width: 25vw;
         left: 37.5vw;
-    }    .logo-links{font-size:1vw;}
+    }    
 
 }
 @media (max-aspect-ratio:6/4){
@@ -215,7 +215,6 @@ body{
 @media (max-aspect-ratio:1/1){
     .desc-container > p{
         width:75%;
-        font-size:1.5vh;
     }
 }
 
@@ -227,6 +226,7 @@ body{
         z-index:5;
     }
 
+        .logo-links{display:none;}
 
     .desc-container > p{
         width:100%;
