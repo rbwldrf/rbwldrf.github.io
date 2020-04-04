@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates|Quicksand|Gotu&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+.fillscreen{
+    height:100vh;
+}
+
+.logo-container,.desc-container{
+    width: 100%; height: 100%;
+}
+
+.logo-container{
+    background-image: linear-gradient(to top,  rgb(141, 167, 206), rgb(65, 75, 107) 120%);
+    background-attachment: fixed;
+    display: inline-block;
+    width: 100%; height: 100%;
+    margin: 0;
+    z-index: -999;
+
+}
+
+.logo-title-container{
+    position: absolute;
+    width:50vw;
+    bottom:8.75vw;
+    left:25vw;
+    z-index:99;
+}
+.logo-image{
+    width: inherit;
+    height: inherit;
+    background-image: url("glacier.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 150vw auto;
+    background-position: bottom;
+    position: absolute;
+    z-index: 2;
+}
+
+.logo-image-product{
+    width: inherit;
+    height: inherit;
+    background-image: url("water.png");
+    background-repeat: no-repeat;
+    background-size: 33vw auto;
+    background-position: center;
+    position: absolute;
+    z-index: 3;
+}
+
+.desc-container{
+    background-image: linear-gradient(to bottom,rgb(218, 255, 255),	rgb(172, 216, 216));
+    background-attachment: fixed;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding:3em;
+    overflow: auto;
+}
+
+.logo-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-areas: "p1 p1 p1 p1 p2 p2""p3 p3 p3 p4 p4 p4";
+    background-color: rgba(64,64,64,0.5);
+    width:inherit;
+    padding:1em;    
+    justify-content: center;
+    z-index: 99;
+
+}
+
+.tp1{grid-area: p1;}
+.tp2{grid-area: p2;}
+.tp3{grid-area: p3; text-align: right;}
+.tp4{grid-area: p4; text-align: left;}
+
+.tp1,.tp2,.tp3,.tp4{
+    margin:0; 
+    color: white;
+    font-family: Gotu;
+    text-shadow: .2vw .2vw rgba(0, 0, 0, 0.66);
+    user-select: none;
+}
+
+.tp1,.tp2{text-align: center;
+    font-size: 1.5vw;
+    padding:0 .25em;
+    flex-basis: 50vw;
+}
+
+.tp3,.tp4{
+    font-size: 6vw;  
+    flex-basis: 24vw;
+    line-height: 90%;
+    padding:0 .15em;
+
+}
+
+
+.blank{
+    grid-area: bl;
+}
+
+.logo-links{
+    /*
+    display: block;
+    /*margin: 75vh 33vw 25vh 33vw;*/
+    width: 100%;
+    text-align: center;
+    background-color: rgba(131, 255, 255, 0.445);
+    font-size: 1vw;
+    font-family: Quicksand;
+    font-weight: 300;
+    position: absolute;
+    bottom: 0;
+    margin:0;
+    z-index: 5;
+}
+
+.logo-links > ul{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    list-style-type: none;
+}
+
+.logo-links > ul > li{
+    border-right: 1px solid black;
+}
+
+.logo-links > ul > li:last-of-type{
+    border-right: none;
+}
+
+body{
+    margin: 0;
+}
+
+.desc-quote {
+    font-size: 3em; 
+    text-align: center;
+    margin: 0;
+    font-family: Quicksand;
+}
+.desc-quote-sayer{
+    text-align: right;
+    margin: 0;
+
+}
+
+.desc-container > p{
+    margin:0;
+    padding: 2em;
+    width:50%;
+    border: 1px solid black;
+    font-size: 2em;
+    text-align: justify !important;
+    margin-bottom: 2em;
+}
+
+.desc-quote-container{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 2.5%;
+    margin-top: 1.25%;
+    padding: 1.25% 0;
+}
+
+.links{
+    display: flex;
+    align-items: stretch;
+    margin: 0 auto;
+    color: white;
+    text-shadow: .1em .1em #000;
+    padding: 1em 3em;
+    border-top:.125em solid white;
+    background-color: rgb(129, 129, 145);
+}
+
+.links > * {
+    width:9999em;
+}
+
+@media (max-width:1600px){
+    .desc-container > p{
+        font-size:1.5em;
+    }
+    .tp3{margin-top: .15em;}
+    .tp3,.tp4{
+        text-align: center;
+    }
+    .tp1,.tp2{
+        font-size: 1vw;
+    }
+    .logo-title-container{
+        width: 25vw;
+        left: 37.5vw;
+    }
+}
+@media (max-aspect-ratio:6/4){
+    .logo-image-product{
+        background-image: url("water.png");
+        background-position: 50% 10%;
+        background-size: auto 90vh;
+        z-index:5;
+    }
+}
+
+@media (max-aspect-ratio:1/1){
+    .logo-links{font-size:1.25em;}
+    .desc-container > p{
+        width:75%;
+        font-size:2em;
+    }
+}
+
+@media (max-aspect-ratio:3/4){
+    .logo-image-product{
+        background-image: url("water-single.png");
+        background-position: 50% 33%;
+        background-size: auto 75vh;
+        z-index:5;
+    }
+
+
+    .desc-container > p{
+        width:100%;
+    }
+}
