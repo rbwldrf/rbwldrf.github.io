@@ -153,14 +153,30 @@ body{
 
 }
 
-.desc-container > p{
+.box > figure{
+    display: flex;
+    margin:0;
+    width:100%;
+}
+
+.box > figure > img{
+    width: 100%;
+    grid-area: i;
+    height: auto;
+}
+.desc-container > div{
     margin:0;
     padding: 2em;
     width:50%;
     border: 1px solid black;
-    font-size: 1.25vw;
+    font-size: .875vw;
     text-align: justify !important;
     margin-bottom: 2em;
+}
+
+.desc-container > div > .info {
+    border: 1px solid black; margin: 1em;
+    padding: 1em;
 }
 
 .desc-quote-container{
@@ -186,8 +202,8 @@ body{
     width:9999em;
 }
 
-@media (max-width:1600px){
-    .desc-container > p{
+@media (max-width:1600px){    
+    .desc-container > div{
         font-size:1.5em;
     }
     .tp3{margin-top: .15em;}
@@ -213,7 +229,7 @@ body{
 }
 
 @media (max-aspect-ratio:1/1){
-    .desc-container > p{
+    .desc-container > div{
         width:75%;
     }
 }
@@ -226,9 +242,20 @@ body{
         z-index:5;
     }
 
-        .logo-links{display:none;}
+    .logo-links{display:none;}
 
-    .desc-container > p{
+    .desc-container > div{
         width:100%;
+    }
+}
+@media (min-width:1600px){
+    .box{      
+        grid-template-columns: 62.5% 37.5%;
+        display: grid;
+        float: none;
+        clear: both;
+        }
+    .boxtext{
+        padding-right: 2em;
     }
 }
