@@ -12,7 +12,7 @@ body {margin:0;}
 
 #title{
     background-color: blueviolet;
-    background-image: url("painter.png");
+    background-image: url("img/painter.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80% 0;
@@ -20,7 +20,7 @@ body {margin:0;}
 
 #about{
     background-color: blueviolet;
-    background-image: url("trekker.png");
+    background-image: url("img/trekker.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: 10% 90%;
@@ -56,11 +56,17 @@ body {margin:0;}
 
 figure{margin:0;}
 
+a:visited{
+    color:white;
+}
+
 .grid-container > figure{
     display:flex;
-    background-color:black;
+    background-color:#333;
+    background-image: url("img/cbfb.jpg");
     width:50%;
-    height:100%;    align-content:space-between;
+    height:100%;    
+    align-content:space-between;
 }
 
 .grid-container > figure > div{    
@@ -68,7 +74,9 @@ figure{margin:0;}
     width:75%;
     height:75%;
     margin: auto;
-    border:.5em solid red;
+    border:.5em inset maroon;
+    border-radius:1em;
+    overflow:hidden;
 
 }
 
@@ -76,6 +84,18 @@ figure{margin:0;}
     grid-area: txt;
     backdrop-filter: blur(32px) grayscale(50%);
     -webkit-backdrop-filter: blur(16px) grayscale(50%);
+    font-family: 'Zilla Slab';
+    color:white;
+    padding:1em;
+    font-size:1.25vmax;
+    overflow-y:auto;
+    text-align:justify;
+    flex-direction:column;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+
+.about-desc > p{
+    padding:0 1em;
 }
 
 .empty-space-left,.grid-container,.about-desc{
@@ -83,8 +103,17 @@ figure{margin:0;}
     display:flex;
 }
 
+.navbar{
+    position:fixed;
+    height:2.5vmax;
+    width:100%;
+    bottom:0;
+    background-color:rgba(127,224,224,0.75);
+    z-index: 999;
+}
+
 .title-cutout{
-    background-image: url("painter-cutout.png");
+    background-image: url("img/painter-cutout.png");
     width: 100%;
     height:100%;
     z-index: 3;
@@ -180,6 +209,17 @@ figure{margin:0;}
     background-color: grey;
     display:inline-block;
     border-radius:100%;
+    position:relative;
+    left:50%;
+    width:30vw;
+    height:30vw;
+    top:5vw;
+    margin-left:-15vw;
+}
+
+.svg-thing > *{
+    width: 100%;
+    height: 100%;
 }
 
 
