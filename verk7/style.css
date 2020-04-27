@@ -108,7 +108,7 @@ a,a:visited{
     height:2.5vmax;
     width:100%;
     bottom:0;
-    background-color:rgba(127,224,224,0.75);
+    background-color:rgba(127,192,192,0.75);
     z-index: 999;
 }
 
@@ -222,11 +222,6 @@ a,a:visited{
     height: 100%;
 }
 
-.navbar-ccontents>li{
-    margin:2em;
-    width:99999em; 
-    height:99999em;
-}
 .navbar-contents>li>a{
     border-right: 1px solid black;
     text-shadow:2px 2px #000;
