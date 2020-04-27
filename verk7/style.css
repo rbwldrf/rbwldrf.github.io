@@ -56,7 +56,7 @@ body {margin:0;}
 
 figure{margin:0;}
 
-a:visited{
+a,a:visited{
     color:white;
 }
 
@@ -220,6 +220,27 @@ a:visited{
 .svg-thing > *{
     width: 100%;
     height: 100%;
+}
+
+.navbar-ccontents>li{
+    margin:2em;
+    width:99999em; 
+    height:99999em;
+}
+.navbar-contents>li>a{
+    border-right: 1px solid black;
+    text-shadow:2px 2px #000;
+    text-decoration:none;
+    padding: .5em;
+}
+.navbar-contents{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    list-style-type: none;
+    position:fixed;
+    width:12.5%;
+    bottom:0;
+    right:0;
 }
 
 
