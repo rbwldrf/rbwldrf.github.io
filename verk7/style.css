@@ -235,12 +235,28 @@ a,a:visited{
 }
 .navbar-contents{
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(4,auto);
     list-style-type: none;
     position:fixed;
-    width:12.5%;
+    width:16.66%;
     bottom:0;
     right:0;
+}
+
+.links{
+    display: flex;
+    align-items: stretch;
+    margin: 3em auto 0 auto;
+    color: white;
+    text-shadow: .1em .1em #000;
+    padding: 1em 3em;
+    border-top:.125em solid white;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding-bottom: 2.5vmax;
+}
+
+.links > * {
+    width:9999em;
 }
 
 
