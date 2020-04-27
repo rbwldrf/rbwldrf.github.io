@@ -127,7 +127,7 @@ a,a:visited{
 
 #rest{
     background-color:#333;
-    height:33vmax;
+    height:50vmax;
 }
 
 .title-footer{
@@ -246,12 +246,12 @@ a,a:visited{
 .links{
     display: flex;
     align-items: stretch;
-    margin: 3em auto 0 auto;
+    margin: 2em auto 0 auto;
     color: white;
     text-shadow: .1em .1em #000;
     padding: 1em 3em;
     border-top:.125em solid white;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(127, 127, 127, 0.75);
     padding-bottom: 2.5vmax;
 }
 
