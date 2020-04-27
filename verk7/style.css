@@ -125,6 +125,10 @@ a,a:visited{
     background-position: 80% 0;
 }
 
+#rest{
+    background-color:#333;
+}
+
 .title-footer{
     position: absolute;
     height: 25%;
@@ -211,10 +215,10 @@ a,a:visited{
     border-radius:100%;
     position:relative;
     left:50%;
-    width:30vw;
-    height:30vw;
-    top:5vw;
-    margin-left:-15vw;
+    width:33.3vmax;
+    height:33.3vmax;
+    top:8.33vmax;
+    margin-left:-16.7vmax;
 }
 
 .svg-thing > *{
