@@ -238,7 +238,7 @@ a,a:visited{
     grid-template-columns: repeat(4,auto);
     list-style-type: none;
     position:fixed;
-    width:16.66%;
+    max-width:50vw;
     bottom:0;
     right:0;
 }
