@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+}
+
+body {margin:0;overflow-x: hidden;}
+
+.fillscreen{
+    height:100vh;
+}
+
+.default-layout{
+    width: inherit;
+    height: inherit;
+    display: grid;
+    grid-template-areas: "lt rt";
+}
+
+.default-layout > .left {
+    grid-area: lt;
+    background-size: auto 25vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 45vw;
+
+}
+
+.default-layout > .right {
+    grid-area: rt;
+    border-bottom: 4px groove rgb(49, 49, 49);
+
+}
+
+.right, .left{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#intro > .default-layout > .right,
+#origins > .default-layout > .right,
+#payne-one > .default-layout > .left,
+#payne-two > .default-layout > .left,
+#qt-break > .default-layout > .left,
+#control > .default-layout > .left
+
+{
+    border-bottom:4px groove rgb(49, 49, 49); 
+    text-align: justify;
+    width: 55vw;
+    height:100%;
+
+}
+
+.default-layout > .left > .upper,
+.default-layout > .right > .upper{
+    height:60vh;
+    border:1px solid black;
+    padding:2em;
+    margin: 0 auto;
+    font-size: 1.1em;
+    max-width: 960px;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.582);
+
+}
+.default-layout > .right > .upper > div,
+.default-layout > .left > .upper > div{
+        columns:1;
+    color:rgb(255, 255, 255);
+}
+
+.default-layout > .right > .upper > div > p,
+.default-layout > .left > .upper > div > p{
+    margin:0;
+    margin-bottom: 1em;
+}
+
+
+.default-layout > .right > .upper  > h1,
+.default-layout > .left > .upper  > h1{
+    font-size:14px;
+    color:white;
+    border-bottom: 1px solid white;
+}
+
+
+
+.default-layout > .right > .video,
+.default-layout > .left > .video{
+    width: 100%;
+    height: 40vh;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+.default-layout > .right > div{
+    height:100%;
+}
+
+
+#intro > .default-layout > .left {
+    background-image: url("remedy-new.png");
+    background-position: 6.25% 50%;
+}
+#origins > .default-layout > .left {
+    background-image: url("remedy-old.png");
+    background-position: 12.5% 50%;
+}
+#payne-one > .default-layout > .right {
+    background-image: url("max1.png");
+    background-position: 90% 50%;
+    background-size: auto 50vmax;
+    width:45vw;
+}
+#payne-one > .default-layout > .left,
+#payne-two > .default-layout > .left,
+#qt-break > .default-layout > .left,
+#control > .default-layout > .left,
+#alan-wake > .default-layout > .left{
+    width:55vw;
+}
+
+#payne-two > .default-layout > .right {
+    background-image: url("max2.png");
+    background-position: 90% 50%;
+    background-size: auto 50vmax;
+    width:45vw;
+}
+#alan-wake > .default-layout > .right {
+    background-image: url("fuckit.png");
+    background-position: 82.5% 100%;
+    background-size: auto 90vh;
+    width:45vw;
+}
+#control > .default-layout > .right {
+    background-image: url("hero_jesse.webp");
+    background-position: 85% 50%;
+    background-size: auto 80vh;
+    width:45vw;
+}
+
+.logo {
+    margin:0 auto;
+    display: block;
+    position: relative;
+    width: 24vw;
+    top: 50vh;
+    max-height: 1em;
+}
+
+#alan-wake > .default-layout {
+    background-image: url("spooky-forest.jpg");
+    background-position: -10vw 45%;
+    background-size:  auto 110vh;
+}
+#qt-break > .default-layout {
+    background-image: url("qtb.jpg");
+    background-position: 92% 25%;
+    background-size:  auto 125vh;
+}
+#control > .default-layout{
+    background-image: url("Hiss.jpg");
+    background-position: 50% 0;
+    background-size:  auto 125vh;
+}
+
+.default-layout{
+    background-attachment: fixed;
+}
+
+@media (min-aspect-ratio:5/3){
+    .default-layout > .right > .upper > div,
+    .default-layout > .left > .upper > div{
+        columns:2;
+        
+    }
+    
+}
+.logo > img{
+    width:100%;height:auto;
+    filter: drop-shadow(5px 5px #000)
+}
