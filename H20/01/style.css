@@ -1,0 +1,15 @@
+body{
+    margin:0;
+}
+
+.cover{
+    width:100vw;
+    height:100vh;
+    background-color: firebrick;
+}
+
+.card{
+    position: relative;
+    left: calc(50vw - 16.7vw);
+    width: 33.3vw;
+}
