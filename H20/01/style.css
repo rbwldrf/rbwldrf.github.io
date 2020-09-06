@@ -77,6 +77,7 @@ body{
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     border-radius: 1vmax;
+    color:white;
 
     animation-name: fade-in;
     animation-duration: 3s;
