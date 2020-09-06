@@ -56,8 +56,17 @@ body{
 } 
 
 @keyframes fade-in{
-    from{margin-top:64px; translate: transformY(64px); filter:opacity(0);}
-    to{margin-top:0px; translate: transformY(0px); filter:opacity(1);}
+    from{
+        margin-top:64px; 
+        transform: translateY(64px); 
+        -webkit-transform: translateY(64px); 
+        filter:opacity(0);
+    }
+    to{
+        margin-top:0px; 
+        transform: translateY(0px); 
+        -webkit-transform: translateY(0px); 
+        filter:opacity(1);}
 }
 
 @keyframes world-spin{
@@ -103,7 +112,6 @@ body{
 
     animation-name: fade-in;
     animation-duration: 6s;
-    animation-timing-function: ease-out;
     animation-delay: 3s;
     animation-fill-mode: forwards;
 
