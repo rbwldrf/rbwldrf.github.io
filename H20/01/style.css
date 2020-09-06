@@ -6,10 +6,122 @@ body{
     width:100vw;
     height:100vh;
     background-color: firebrick;
+    overflow: hidden;
+
+}
+
+.about{
+    margin: 0 auto;
+    max-width: 960px ;
+    margin-top:5em;
+    text-align: justify;
 }
 
 .card{
+
     position: relative;
-    left: calc(50vw - 16.7vw);
-    width: 33.3vw;
+    
+    margin: 0 auto;
+
+    width: 33.3vmax;
+    height: 33.3vmax;
+
+    max-height: 95vmin;
+}
+
+.card > .flair {
+    background-image: url(world.jpg);
+    background-size: 50vmax 50vmax;
+    background-position: 0vw -5vmax;
+    width: 90%;
+    height: 125%;
+    border-radius: 100%;
+    position: relative;
+    display: block;
+
+    max-height: 33.3vmax;
+    max-width: 33.3vmax;
+
+    top: calc(50vh - 62.5%);
+
+
+    margin: auto;
+
+    animation-name: world-spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 30s;    
+} 
+
+@keyframes fade-in{
+    from{margin-top:64px;filter:opacity(0);}
+    to{margin-top:0px;filter:opacity(1);}
+}
+
+@keyframes world-spin{
+    from{background-position: 0vmax -7vmax;}
+    to{background-position: -50vmax -7vmax;}
+}
+
+.card > .foreground {
+    position: absolute;
+    z-index: 99;
+    width: inherit;
+    top:50vh;
+}
+
+.card > .foreground > .title {
+    text-align: center;
+    font-size: 4.75vmax;
+    top: 50vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+
+    animation-name: fade-in;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+.card > .foreground > .button{
+    width: auto;
+    height: auto;
+    padding: 0.5em .75em;
+    text-decoration: none;
+    color: white;
+    background-color: gold;
+    width: 6vmax;
+    font-size: 1vmax;
+    text-align: center;
+    position: relative;
+    left: calc(50% - 3vmax);
+
+    animation-name: fade-in;
+    animation-duration: 8s;
+    animation-delay: 0s;
+
+}
+
+.card > .button:visited{
+    color:white;
+}
+
+.stripes{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+}
+
+.stripes > .left, .stripes > .right{
+    position: absolute;
+    width: 2vw;
+    height: 100vh;
+    background-color: white;
+}
+
+.stripes > .left{
+    left: calc(50vw - 1vw - 3vw);
+}
+
+.stripes > .right{
+    left: calc(50vw - 1vw + 3vw);
 }
