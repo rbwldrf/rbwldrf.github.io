@@ -94,6 +94,12 @@ body{
     border-radius: 1vmax;
     color:white; 
 
+    -webkit-animation-name: fade-in;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+
+
     animation-name: fade-in;
     animation-duration: 3s;
     animation-delay: 0s;
@@ -119,11 +125,11 @@ body{
 
     -webkit-animation-name: fade-in;
     -webkit-animation-delay: 3s;
-    -webkit-animation-duration: 6s;
+    -webkit-animation-duration: 4s;
     -webkit-animation-fill-mode: forwards;
 
     animation-name: fade-in;
-    animation-duration: 6s;
+    animation-duration: 4s;
     animation-delay: 3s;
     animation-fill-mode: forwards;
 
