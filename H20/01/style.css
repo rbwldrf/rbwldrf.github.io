@@ -107,7 +107,7 @@ body{
     width: 6vmax;
     font-size: 1vmax;
     text-align: center;
-    position: relative;
+    position: absolute;
     left: calc(50% - 3vmax);
 
     filter: opacity(0);
