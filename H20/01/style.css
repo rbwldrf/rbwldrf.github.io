@@ -100,6 +100,7 @@ body{
 }
 
 .card > .foreground > .button{
+    user-select: none;
     width: auto;
     height: auto;
     padding: 0.5em .75em;
