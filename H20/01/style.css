@@ -97,6 +97,8 @@ body{
     animation-name: fade-in;
     animation-duration: 3s;
     animation-delay: 0s;
+    animation-fill-mode: forwards;
+
 }
 
 .card > .foreground > .button{
