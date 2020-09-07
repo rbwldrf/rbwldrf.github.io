@@ -92,7 +92,7 @@ body{
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     border-radius: 1vmax;
-    color:white;
+    color:white; 
 
     animation-name: fade-in;
     animation-duration: 3s;
@@ -114,6 +114,11 @@ body{
     left: calc(50% - 3vmax);
 
     filter: opacity(0);
+
+    -webkit-animation-name: fade-in;
+    -webkit-animation-delay: 3s;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-fill-mode: forwards;
 
     animation-name: fade-in;
     animation-duration: 6s;
