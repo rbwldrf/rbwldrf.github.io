@@ -14,10 +14,13 @@ body{
 .about{
     margin: 0 auto;
     max-width: 960px;
+    height:70vh;
     margin-top:5em;
     text-align: justify;
     color: white;
     padding: 1em;
+    overflow-y: scroll;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .card{
