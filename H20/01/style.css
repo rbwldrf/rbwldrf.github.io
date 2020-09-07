@@ -52,7 +52,8 @@ body{
 
     top: calc(50vh - 62.5%);
 
-
+    filter: grayscale(100%) brightness(80%) sepia(100%) hue-rotate(110deg) saturate(150%) contrast(1.2);
+    
     margin: auto;
 
     animation-name: world-spin;
