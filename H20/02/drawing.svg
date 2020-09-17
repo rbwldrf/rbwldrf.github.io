@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg8">
+
+  <g
+     id="layer1">
+    <circle
+       style="fill:#93606f;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.499068;stroke-miterlimit:4;stroke-dasharray:none;"
+       id="path2940"
+       cx="60"
+       cy="60"
+       r="60" />
+    <circle
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.518519;stroke-miterlimit:4;stroke-dasharray:none;"
+       id="flair1"
+       cx="60"
+       cy="52"
+       r="52" />
+    <ellipse
+       style="fill:#db787c;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.498575;stroke-miterlimit:4;stroke-dasharray:none;"
+       id="path10"
+       cx="60"
+       cy="50.000572"
+       rx="49.75071"
+       ry="49.750713" />
+    <circle
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;"
+       id="flair2"
+       cx="60"
+       cy="54.000572"
+       r="53.73077" />
+    <ellipse
+       style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;"
+       id="flair3"
+       cx="60"
+       cy="56.000572"
+       rx="55.720798"
+       ry="55.720795" />
+    <circle
+       style="fill:#806070;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.4;stroke-miterlimit:4;stroke-dasharray:none;"
+       id="path10-6-2"
+       cx="60"
+       cy="100.00056"
+       r="14.925187" />
+    <circle
+       style="fill:#806070;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.4;stroke-miterlimit:4;stroke-dasharray:none;"
+       id="path10-6"
+       cx="60"
+       cy="40.000572"
+       r="39.800571" />
+  </g>
+</svg>
