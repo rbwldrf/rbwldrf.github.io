@@ -16,8 +16,8 @@ body{
 }
 
 @keyframes woop{
-    0% {transform: scale(100%,100%); stroke-opacity: 1; stroke-width: .2vmin; }
-    100% {transform: scale(90%,90%); stroke-opacity: 0; stroke-width: 4vmin; }
+    0% {transform: scale(100%,100%); -webkit-transform: scale(100%,100%); stroke-opacity: 1; stroke-width: .2vmin; }
+    100% {transform: scale(90%,90%); -webkit-transform: scale(90%,90%); stroke-opacity: 0; stroke-width: 4vmin; }
 }
 
 #flair1,#flair2,#flair3{
