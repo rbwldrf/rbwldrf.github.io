@@ -1,0 +1,38 @@
+    #hb:checked ~ .menu{
+        display: block;
+    }
+    .menu{
+        display: none;
+    }
+
+.uh{width: 128px; height:128px; background-color: darkred;}
+
+@media (min-width:960px){
+    #hb{
+        display:none;
+    }
+
+    .menu {
+        display: block;
+        background-color: #333;
+        border-radius: .25em;
+
+    }
+    .menu > ul{
+        display: inline-block;
+        list-style-type: none;
+    }
+
+    .menu > ul > li {
+        display: inline-block;
+        float: left;
+        padding-right:1.5em;
+        border-right: dimgray;
+    }
+
+    a,a:visited,a:hover{
+        color:white;
+        text-decoration: none;
+    }
+
+}
