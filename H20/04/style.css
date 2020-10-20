@@ -54,6 +54,19 @@ html{
     text-align: center;
 }
 
+.food-table{
+    grid-area: m;
+}
+
+.inquiry{
+    grid-area: i;
+}
+
+.content{
+    display: grid;
+    grid-template-areas: "m m i";
+}
+
 @media (min-aspect-ratio:1/1){
     #hb{
         display:none;
