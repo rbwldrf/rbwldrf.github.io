@@ -1,9 +1,16 @@
-    #hb:checked ~ .menu{
-        display: block;
-    }
-    .menu{
-        display: none;
-    }
+#hb:checked ~ .menu{
+    display: block;
+}
+.menu{
+    display: none;
+}
+
+
+
+a,a:visited,a:hover{
+    color:white;
+    text-decoration: none;
+}
 
 .uh{width: 128px; height:128px; background-color: darkred;}
 
@@ -30,9 +37,6 @@
         border-right: dimgray;
     }
 
-    a,a:visited,a:hover{
-        color:white;
-        text-decoration: none;
-    }
+
 
 }
