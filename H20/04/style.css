@@ -20,6 +20,7 @@ html{
     display: block;
     position: fixed;
     bottom: 0;
+    left:0;
 }
 .menu-options{
     display: none;
