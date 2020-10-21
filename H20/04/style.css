@@ -105,6 +105,8 @@ html{
         display: inline-block;
         float: right;
         padding-top:.75vmin;
+        width:auto;
+        height:auto;
 
     }
     .menu > ul{
