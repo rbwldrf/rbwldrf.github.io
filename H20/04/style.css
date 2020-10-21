@@ -62,7 +62,11 @@ html{
     grid-area: i;
 }
 
-.inquiry > .name{
+.inquiry > .name,
+.inquiry > .email,
+.inquiry > #date,
+.inquiry > #phone
+{
     width:100%;
 }
 
