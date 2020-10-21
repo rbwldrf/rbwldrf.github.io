@@ -27,11 +27,13 @@ html{
 .menu{
     width: 0px;
     height: 0px;
+    display: inline-block;
 }
 
 .hb{
     position: fixed;
     bottom: 0;
+    left:0;
 }
 
 *{
