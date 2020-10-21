@@ -54,19 +54,19 @@
             </tfoot>
             
         </table>
-        <div class="inquiry">
+        <form class="inquiry">
             <p>Nafn:</p>
-            <input required type="text" value="" class="name">
+            <input required type="text" value="" class="name" title="Gefðu fram nafn.">
             <p>Netpóstur:</p>
-            <input required type="email" value="" class="email">
+            <input required type="email" value="" class="email" title="Þarf að vera heimilt netfang.">
             <p>Dagur:</p>
-            <input required type="date" name="" id="date">
+            <input required type="date" name="" id="date" title="Gefðu fram dagsetningu, fyrst það þarf í verkefninu.">
             <p>Símanúmer:</p>
-            <input required type="tel" name="" id="phone">
+            <input required pattern="[0-9]{7}" name="" id="phone" title="Þarf að vera heimilt símanúmer.">
             <p>bla:</p>
-            <input required type="checkbox" value="" class="asdf">
+            <input type="checkbox" value="" class="asdf">
             <input type="submit" value="Submit">
-        </div>
+        </form>
     </div>
 </body>
 </html>
