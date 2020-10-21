@@ -16,6 +16,24 @@ html{
     background-repeat: no-repeat;
 }
 
+.hb:checked ~ .menu-options{
+    display: block;
+    position: fixed;
+    bottom: 0;
+}
+.menu-options{
+    display: none;
+}
+.menu{
+    width: 0px;
+    height: 0px;
+}
+
+.hb{
+    position: fixed;
+    bottom: 0;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -30,6 +48,7 @@ html{
 
 .soc-media{
     float: right;
+    display: block;
 }
 
 .content{
@@ -74,6 +93,8 @@ html{
     display: grid;
     grid-template-areas: "m m m i";
 }
+
+
 
 @media (min-aspect-ratio:1/1){
     #hb{
