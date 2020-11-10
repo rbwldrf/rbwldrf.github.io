@@ -1,0 +1,70 @@
+$c1: rgb(255, 255, 255);
+
+.myPara, .myNestedPara, .myMixPara, .myFun{
+    background-color: rgba(204, 197, 188, 0.459);
+    padding: 2em;
+    border-radius: 2em;
+    text-shadow: .1em .1em .05em rgba(0, 0, 0, 0.582);
+}
+
+body{
+    background-color: rgb(124, 150, 151);
+}
+
+.myPara{
+    color: $c1;
+}
+
+@mixin mixin-example {
+    color: $c1;
+}
+
+.myMixPara{
+    @include mixin-example()
+}
+
+@function avg-between-two-colors($col1,$col2){
+    @return ($col1+$col2)/2;
+}
+
+.myFun{
+    color: avg-between-two-colors(rgb(187, 68, 68),rgb(121, 138, 192));
+}
+
+section{
+
+    background-color: rgb(115, 128, 120);
+    display: block;
+    position: relative;
+    width: 50vw;
+    left: 25vw;
+    padding:1em;
+    border-radius: 1em;
+    margin: 1em 0;
+
+    h1{
+        position: relative;
+        margin-left: 2em;
+    }
+    .myNestedPara {
+        color: $c1;
+    }
+}
+
+#föll{
+    h1,h2,h3{
+        display: inline-block;
+    } 
+    h2:after, h1:after {
+        content: ",";
+    }
+    h3:after{
+        content: ".";
+    }
+}
+
+footer{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+}
