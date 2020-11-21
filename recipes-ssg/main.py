@@ -1,11 +1,12 @@
+import os
 from markdown2 import markdown
 from jinja2 import Environment, PackageLoader
 
-env = Environment(loader=PackageLoader(),autoescape=select_autoescape(['html','xml']))
+print(os.getcwd())
+
+env = Environment(loader=PackageLoader("main", "templates"))
 
 src = open("recipes-ssg/a.md","r")
 base = open("recipes/home.html","w")
 
-base = 
-
-markdown("")
+base = "what the fuck"
