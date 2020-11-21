@@ -4,9 +4,20 @@ from jinja2 import Environment, PackageLoader
 
 print(os.getcwd())
 
-env = Environment(loader=PackageLoader("main", "templates"))
+env = Environment(loader=PackageLoader("main","templates"))
+template = env.get_template("./templates/test.html")
+
 
 src = open("recipes-ssg/a.md","r")
 base = open("recipes/home.html","w")
 
-base = "what the fuck"
+base.write(markdown("ughh"))
+
+data = {
+    'content': src,
+    'title': src.metadata['title'],
+    'date': src.metadata['date']
+    }
+
+src.close()
+base.close()
