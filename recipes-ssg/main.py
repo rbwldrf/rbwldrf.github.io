@@ -1,7 +1,11 @@
 from markdown2 import markdown
 from jinja2 import Environment, PackageLoader
 
-with open("recipes-ssg/a.md","r") as file:
-    pass
+env = Environment(loader=PackageLoader(),autoescape=select_autoescape(['html','xml']))
 
-markdown("**fuck**")
+src = open("recipes-ssg/a.md","r")
+base = open("recipes/home.html","w")
+
+base = 
+
+markdown("")
