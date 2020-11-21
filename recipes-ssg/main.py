@@ -5,7 +5,7 @@ from jinja2 import Environment, PackageLoader
 print(os.getcwd())
 
 env = Environment(loader=PackageLoader("main","templates"))
-template = env.get_template("./templates/test.html")
+template = env.get_template("test.html")
 
 
 src = open("recipes-ssg/a.md","r")
