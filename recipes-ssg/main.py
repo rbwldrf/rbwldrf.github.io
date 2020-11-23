@@ -8,10 +8,11 @@ env = j.Environment(loader=j.FileSystemLoader("templates"))
 template = env.get_template("test.html")
 
 
+
 src = open("recipes-ssg/a.md","r")
 base = open("recipes/home.html","w")
 
-base.write(markdown("er ennþá að reyna að læra á þetta"))
+base.write(template.render(bla=markdown("#welcome to my site \n _hello_")))
 
 src.close()
 base.close()
