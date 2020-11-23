@@ -10,10 +10,14 @@ template = env.get_template("test.html")
 src = open("recipes-ssg/a.md","r")
 base = open("recipes/home.html","w")
 
+title = markdown("#"+"welcome to my recipe site!")
+
 recipeDictArray =[{"href":"a.com","desc":"hello"}]
+contentDictArray = [{"def":"center","ct":title}]
+
 
 base.write(template.render(
-    bla=markdown("#welcome to my site \n _hello_"),
+    content=contentDictArray,
     recipes=recipeDictArray
     )
 )

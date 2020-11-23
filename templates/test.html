@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="../templates/style.css">
 </head>
 <body>
-    {{bla}}
+    {% for e in content %}
+        <div class="{{e.def}}" style="{{e.style}}">{{e.ct}}</div>
+    {% endfor %}
+    <div class="title">{{bla}}</div>
     <ul id="recipes">
         {% for i in recipes %}
             <li><a href="{{ i.href }}">{{i.desc}}</a></li>

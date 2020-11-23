@@ -6,3 +6,7 @@ body{
 a{
     color:white !important;
 }
+
+.center{
+    text-align: center;
+}
