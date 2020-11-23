@@ -6,5 +6,10 @@
 </head>
 <body>
     {{bla}}
+    <ul id="recipes">
+        {% for i in recipes %}
+            <li><a href = " {{ i.href }} "> {{i.desc}} </a></li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
