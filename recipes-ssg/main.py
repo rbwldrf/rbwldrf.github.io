@@ -6,7 +6,9 @@ import shutil
 print(os.getcwd())
 
 env = j.Environment(loader=j.FileSystemLoader("templates"))
+
 template = env.get_template("test.html")
+recipe_template = env.get_template("recipe.html")
 
 imgpath = "./recipes-ssg/img"
 
@@ -28,15 +30,18 @@ f = list()
 for md in os.listdir(mdpath):
     f.append(markdown(open(os.path.join(mdpath+"/"+md)).read()))
 
+rd_rec = list()
 
-
-recipes = [{"href":"a.com","desc":"hello"}]
+recipes = [{"href":"a.com","desc":"i am porfesionnal web developer"}]
 contentDictArray = [
     {"def":"center","ct":title},
-    {"def":"bla","ct":''.join(map(str, f))},
-    {"def":"gallery","ct":recipes}
-    ]
+        
+    
+]
 
+contentDictArray.append( {"def":"bla","ct":recipe_template.render(content=f[0])} )
+
+contentDictArray.append({"def":"gallery","ct":recipes})
 
 base.write(template.render(
     content=contentDictArray

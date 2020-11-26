@@ -10,3 +10,17 @@ a{
 .center{
     text-align: center;
 }
+
+.recipe-window{
+    color: black;
+    background-color: white;
+    padding: 1em;
+    width: 40vmin;
+    height: 60vmin;
+    
+}
+
+.recipe-window > p > img {
+    width: 100%;
+    height: 75%;
+}
