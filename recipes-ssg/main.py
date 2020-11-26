@@ -42,8 +42,6 @@ contentDictArray = [
 for aa in f:
     recipes.append( recipe_template.render(content=aa) )
 
-contentDictArray.append({"def":"gallery","ct":recipes})
-
 base.write(template.render(
     content=contentDictArray,
     rec=recipes

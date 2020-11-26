@@ -7,15 +7,7 @@
 </head>
 <body>
 	{% for el in content %}
-		{% if el.def=="gallery" %}
-			<ul> 
-				{% for i in el.ct %}
-					<div> <a href="{{ i.href }}">{{i.desc}}</a></div>
-				{% endfor %} 
-			</ul>
-		{% else %}
-			<div class="{{el.def}}" style="{{el.style}}">{{el.ct}}</div>
-		{% endif %}
+			<div class="{{el.def}}">{{el.ct}}</div>
 	{% endfor %}  
 	<div class = "recipe-grid">
 	{% for rp in rec %}
