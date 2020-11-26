@@ -16,7 +16,7 @@ a{
 
 .recipe-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(1em,20em));
+    grid-template-columns: repeat(auto-fit,minmax(320px,2fr));
     grid-template-rows: repeat(2,75vmin);
 }
 
