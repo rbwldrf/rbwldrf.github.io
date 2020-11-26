@@ -32,7 +32,7 @@ for md in os.listdir(mdpath):
 
 rd_rec = list()
 
-recipes = [{"href":"a.com","desc":"i am porfesionnal web developer"}]
+recipes = [{"href":"a.com","desc":"web desifgn is my passion"}]
 contentDictArray = [
     {"def":"center","ct":title},
         
