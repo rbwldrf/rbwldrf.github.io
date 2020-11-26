@@ -1,19 +1,21 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../templates/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="../templates/style.css">
 </head>
 <body>
-    {% for e in content %}
-        <div class="{{e.def}}" style="{{e.style}}">{{e.ct}}</div>
-    {% endfor %}
-    <div class="title">{{bla}}</div>
-    <ul id="recipes">
-        {% for i in recipes %}
-            <li><a href="{{ i.href }}">{{i.desc}}</a></li>
-        {% endfor %}
-    </ul>
+	{% for el in content %}
+		{% if el.def=="gallery" %}
+			<ul> 
+				{% for i in el.ct %}
+					<li> <a href="{{ i.href }}">{{i.desc}}</a></li>
+				{% endfor %} 
+			</ul>
+		{% else %}
+			<div class="{{el.def}}" style="{{el.style}}">{{el.ct}}</div>
+		{% endif %}
+	{% endfor %}  
 </body>
 </html>
