@@ -1,3 +1,6 @@
+*, *::before, *::after{
+box-sizing: border-box;
+}
 body{
     background-color: rgb(131, 93, 93);
     color: white;
@@ -11,16 +14,36 @@ a{
     text-align: center;
 }
 
+.recipe-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(1em,20em));
+    grid-template-rows: repeat(2,75vmin);
+}
+
 .recipe-window{
     color: black;
     background-color: white;
     padding: 1em;
-    width: 40vmin;
-    height: 60vmin;
-    
+    width: 95%;
+    height: 95%;
 }
 
 .recipe-window > p > img {
     width: 100%;
-    height: 75%;
+    height: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.recipe-window > blockquote{
+    overflow-y: scroll;
+    height: 33%;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.recipe-window > h1{
+    display: block;
+    width: 100%;
+    text-align: center;
 }

@@ -32,19 +32,21 @@ for md in os.listdir(mdpath):
 
 rd_rec = list()
 
-recipes = [{"href":"a.com","desc":"web desifgn is my passion"}]
+recipes = list()
 contentDictArray = [
     {"def":"center","ct":title},
         
     
 ]
 
-contentDictArray.append( {"def":"bla","ct":recipe_template.render(content=f[0])} )
+for aa in f:
+    recipes.append( recipe_template.render(content=aa) )
 
 contentDictArray.append({"def":"gallery","ct":recipes})
 
 base.write(template.render(
-    content=contentDictArray
+    content=contentDictArray,
+    rec=recipes
     )
 )
 
