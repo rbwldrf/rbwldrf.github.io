@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trident - an experimental WebGPU-based engine.</title>
+</head>
+<body>
+	<script >
+			
+	</script>
+	<canvas id='tri_canvas'>
+	<script type ="module">
+		import glslangModule from 'https://unpkg.com/@webgpu/glslang@0.0.8/dist/web-devel/glslang.js';
+
+		var adapter = await navigator.gpu.requestAdapter();
+		var device = await adapter.requestDevice();
+		var canvas = document.getElementById("tri_canvas");
+		var context = canvas.getContext("gpupresent");
+
+	</script>
+</body>
+</html>
