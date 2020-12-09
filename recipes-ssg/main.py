@@ -21,7 +21,7 @@ for bla in os.listdir(imgpath):
 src = open("recipes-ssg/a.md","r")
 base = open("myrecipes/index.html","w")
 
-title = markdown("#"+"welcome to my recipe site!")
+#title = markdown("#"+"welcome to my recipe site!")
 
 mdpath = "./recipes-ssg/mds"
 
@@ -34,7 +34,7 @@ rd_rec = list()
 
 recipes = list()
 contentDictArray = [
-    {"def":"center","ct":title},
+    {"def":"center"},
         
     
 ]
