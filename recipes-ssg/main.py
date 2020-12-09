@@ -19,7 +19,7 @@ for bla in os.listdir(imgpath):
         os.path.join("./img/",bla))
 
 src = open("recipes-ssg/a.md","r")
-base = open("recipes/home.html","w")
+base = open("myrecipes/index.html","w")
 
 title = markdown("#"+"welcome to my recipe site!")
 
