@@ -4,7 +4,9 @@
 body{
     background-color: rgb(131, 93, 93);
     color: white;
-    display: flex;
+    display: grid;
+
+    grid-template-areas: "a rg""ft rg";
 }
 
 a{
@@ -29,7 +31,13 @@ a{
 .recipe-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(320px,2fr));
-    margin-left: 1.5em;
+    margin-left: 1.5em;    
+    grid-area: rg;
+
+}
+
+.food-table{
+    grid-area: ft;
 }
 
 .recipe-window{
@@ -52,6 +60,7 @@ a{
     text-align: justify;
     padding-top: 1%;
     margin: 3% 2%;
+    grid-area: a;
 
     p{
         background-color: cornsilk;
