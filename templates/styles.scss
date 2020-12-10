@@ -6,7 +6,7 @@ body{
     color: white;
     display: grid;
 
-    grid-template-areas: "a a a rg""ft ft ft rg" "ft ft ft rg";
+    grid-template-areas: "a a a rg""ft ft ft rg" "ft ft ft rg" "ft ft ft rg" "ft ft ft rg";
 }
 
 a{
@@ -37,8 +37,15 @@ a{
 }
 
 .food-table{
+    border-spacing: 0;
     grid-area: ft;
+    width: 100%;
+    tbody{
+        tr:nth-of-type(even) > td {background-color: rgb(80,66,66);}
+        tr:nth-of-type(odd) > td {background-color: rgb(96,80,80);}
+    }
 }
+td{padding: 2em;text-align: center;}
 
 .recipe-window{
     color: black;
