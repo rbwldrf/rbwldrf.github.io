@@ -5,6 +5,7 @@ body{
     background-color: rgb(131, 93, 93);
     color: white;
     display: grid;
+    padding:1em;
 
     grid-template-areas: "a a a rg""ft ft ft rg" "ft ft ft rg" "ft ft ft rg" "ft ft ft rg";
 }
@@ -18,13 +19,12 @@ a{
 }
 
 .logo{
-    width:15em;
+    width:25vmin;
     height: auto;
     background-color: cornsilk;
-    padding: 1em;
-    position: fixed;
-    bottom:1em;
-    right:1em;
+    padding: .5em;
+    position: absolute;
+    top: 1em;
     border: 2px solid black;
 }
 

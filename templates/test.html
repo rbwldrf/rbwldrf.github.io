@@ -6,8 +6,11 @@
 	<link rel="stylesheet" href="../templates/styles.min.css">
 </head>
 <body>
-	<img src="../logo.svg" alt="svg" class="logo">
-		<div class="about"> <p>{{about}}</p>
+		<div class="about"> 	
+			
+			<img src="../logo.svg" alt="svg" class="logo">
+			
+			<p>{{about}}</p>
 		
 	</div>
 		
@@ -23,47 +26,16 @@
 	<table class="food-table">
 		<thead>
 				<tr>
-						<td>Bla</td>
-						<td>Bla</td>
-						<td>Bla</td>                    
+						<td>Type of Food</td>
+						<td>Serving Size</td>
+						<td>Price per Unit</td>                    
 				</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>food</td>
-				<td>more food</td>
-				<td>even more food</td>
-		</tr>
-		<tr>
-				<td>bucket of food</td>
-				<td>food trough</td>
-				<td>food truck</td>
-		</tr><tr>
-			<td>food</td>
-			<td>more food</td>
-			<td>even more food</td>
-	</tr>
-	<tr>
-			<td>bucket of food</td>
-			<td>food trough</td>
-			<td>food truck</td>
-	</tr><tr>
-		<td>food</td>
-		<td>more food</td>
-		<td>even more food</td>
-</tr>
-<tr>
-		<td>bucket of food</td>
-		<td>food trough</td>
-		<td>food truck</td>
-</tr>
+			{%for fd in foods%}
+				{{fd}}
+			{% endfor %}
 		</tbody>
-		<tfoot>
-				<td>Bla</td>
-				<td>Bla</td>
-				<td>Bla</td>
-		</tfoot>
-		
 </table>
 	
 </body>
