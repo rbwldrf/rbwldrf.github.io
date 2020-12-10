@@ -23,7 +23,8 @@ base = open("myrecipes/index.html","w")
 
 #title = markdown("#"+"welcome to my recipe site!")
 
-mdpath = "./recipes-ssg/mds"
+mdpath = "./recipes-ssg/mds/recipes"
+mdpath2 = "./recipes-ssg/mds"
 
 f = list()
 
@@ -44,7 +45,8 @@ for aa in f:
 
 base.write(template.render(
     content=contentDictArray,
-    rec=recipes
+    rec=recipes,
+    about=markdown(open(os.path.join(mdpath2+"/about.md")).read())
     )
 )
 
