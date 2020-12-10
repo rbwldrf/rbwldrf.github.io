@@ -6,7 +6,7 @@ body{
     color: white;
     display: grid;
 
-    grid-template-areas: "a rg""ft rg";
+    grid-template-areas: "a a a rg""ft ft ft rg" "ft ft ft rg";
 }
 
 a{
@@ -58,14 +58,14 @@ a{
 
 .about{
     text-align: justify;
-    padding-top: 1%;
     margin: 3% 2%;
+    background-color: cornsilk;
+
     grid-area: a;
 
     p{
-        background-color: cornsilk;
         color: black;
-        padding: 1em;
+        padding: 1em 2em;
     }
 }
 
