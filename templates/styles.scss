@@ -7,7 +7,7 @@ body{
     display: grid;
     padding:1em;
 
-    grid-template-areas: "a a a rg""ft ft ft rg" "ft ft ft rg" "ft ft ft rg" "nq nq nq rg";
+    grid-template-areas: "a a a rg""ft ft ft rg" "nq nq nq rg" "nq nq nq rg" "nq nq nq rg";
 }
 
 a{
@@ -71,7 +71,16 @@ td{padding: 2em;text-align: center;}
     background-color: cornsilk;
     grid-area: nq;
     color: black;
+    display: flex;
+    align-items: stretch;
+    max-height: 10em;
+    padding:2em;
 }
+
+.inquiry div{
+    width: 100%;
+}
+
 
 .about{
     text-align: justify;

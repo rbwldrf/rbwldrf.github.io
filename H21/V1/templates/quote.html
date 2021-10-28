@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="quote-div">
+
+        <img src={{img}} alt="mynd" class="quote-pic">
+
+        <div class="quote-text">
+            <h3 class="subtitle quote-indicator">Tilvísun dagsins:</h3>
+            <h1 class="title quote-text"> {{ quote }} </h1>
+        </div>
+
+    </div>
+
+    <div class="back-link"><a href="/">Til baka</a></div>
+
+
+{% endblock %}
